@@ -1,0 +1,103 @@
+/*Variables*/
+/*General*/
+* {
+  font-family: Raleway, sand-serif; }
+
+/*Index y principal*/
+.color_boton {
+  background-color: lightgray;
+  border: brown; }
+
+.color_filas {
+  color: black;
+  background-color: lightgray; }
+
+a {
+  color: brown;
+  text-decoration: none;
+  list-style: none; }
+
+title {
+  text-decoration: none;
+  list-style: none;
+  color: black; }
+
+header {
+  background-color: beige; }
+
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none; }
+
+nav {
+  margin: 0px 0px 20px 0px; }
+
+div {
+  text-align: center; }
+
+.tituloGris {
+  color: black;
+  text-align: center;
+  font-family: Raleway, sand-serif;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  transition: color, 1s, transform 1s; }
+
+.tituloGris:hover {
+  color: yellow;
+  transform: scale(1.2, 1.2); }
+
+.navbar-dark .navbar-bran {
+  color: brown; }
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 20px 0px 0px 0px; }
+
+/*Contacto*/
+.imagenCall {
+  width: 100%;
+  height: 100%; }
+
+form {
+  border-radius: 500px;
+  background-color: beige; }
+
+img {
+  animation-duration: 3s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+img-imagen_a {
+  border-radius: 30px; }
+
+img-imagen_b {
+  border-radius: 30px; }
+
+img-imagen_c {
+  border-radius: 30px; }
+
+.fotos_comida--border {
+  border-radius: 30px; }
+
+div .fotos_comida {
+  align-items: center; }
+
+.fotos_comida img {
+  border-radius: 30px; }
+
+.imagenes {
+  width: 100%;
+  height: 100%; }
+
+.mi_imagen .imagen_call {
+  width: 100%; }

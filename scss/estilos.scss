@@ -1,0 +1,139 @@
+/*Variables*/
+$color_principal: linen;
+$letra_principal: Raleway, sand-serif;
+$background_color:colordefecto;
+$borde_redondo: 500px;
+$color_general: black;
+$posicion_texto: center;
+$transicion_color: color, 1s, transform 1s;
+$text_decoration: none;
+
+
+/*General*/
+* {
+    font-family: $letra_principal;
+}
+
+/*Index y principal*/
+.color_boton {
+    background-color: lightgray;
+    border: brown;
+}
+.color_filas {
+    color: black;
+    background-color: lightgray;
+}
+a {
+    color: brown;
+    text-decoration: $text_decoration;
+    list-style: $text_decoration;
+}
+title {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+header{
+    @if $background_color== colordefecto {
+        background-color:beige;
+    }
+    @else {
+        background-color: $color_general;
+    }
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+nav {
+    margin: 0px 0px 20px 0px;
+}
+div {
+    text-align: $posicion_texto;
+}
+.tituloGris {
+    color:$color_general;
+    text-align: $posicion_texto;
+    font-family: $letra_principal;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    transition: $transicion_color;
+}
+.tituloGris:hover {
+    color:yellow;
+    transform: scale(1.2,1.2);
+}
+.navbar-dark .navbar-bran {
+    color: brown;
+}
+
+/*Footer*/
+footer {
+    background-color:$color_general;
+    color: white;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+@mixin medidas($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*Contacto*/
+.imagenCall {
+    @include medidas (100%,100%)
+}
+form {
+    border-radius: $borde_redondo;
+    @if $background_color== colordefecto {
+        background-color:beige;
+    }
+    @else {
+        background-color: $color_general;
+    }
+}
+
+img {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@each $fotos_comida in imagen_a, imagen_b, imagen_c {
+    img-#{$fotos_comida}{
+        border-radius: 30px;
+    }
+}
+
+
+.fotos_comida--border {
+    border-radius: 30px;
+}
+
+
+div .fotos_comida {
+    align-items: center;
+}
+
+.fotos_comida img {
+    border-radius: 30px;
+}
+.imagenes {
+    width: 100%;
+    height: 100%;
+}
+
+.mi_imagen .imagen_call {
+    width: 100%;
+}
